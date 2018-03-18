@@ -1,4 +1,21 @@
-
+<section class="intro">
+  <nav>
+    <a href="#" id="menu-icon"></a>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#port">Portfolio</a></li>
+      <li><a href="#serv">Services</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
+  <div class="inner">
+    <div class="content">
+      <h1>{{personal_data.name}}</h1>
+      <p>my adventures.</p>
+    </div>
+  </div>
+</section>
+<div class="container">
   <div id="about"></div>
   <div class="clearfix"></div>
     <section class="left-col">
@@ -17,33 +34,9 @@
   <div class="clearfix"></div>
   <div id="port"></div>
       <h2>My Portfolio</h2>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_1.jpg"></a>
+      <section *ngFor="let photo of port_photos" class="one-third-port">
+          <a href="#"><img src="{{photo.src}}"></a>
       </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_2.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_3.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_4.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_5.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_6.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_7.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_9.jpg"></a>
-      </section>
-      <section class="one-third-port">
-        <a href="#"><img src="assets/img/photo_10.jpg"></a>
-      </section>>
   <div class="clearfix"></div>    
     <div id="serv"></div>
     <section class="left-col">
@@ -62,16 +55,24 @@
       </section>
     </section>
   <div class="clearfix"></div>
-  <div id="contact"></div>
       <section class="parallax">
         <div class="parallax-inner">
         </div>
       </section>
   <div class="clearfix"></div>
+  <div id="contact"></div>
     <h2>Contact Me</h2>
-    <section class="contact">
-      <p>Stefan Szabo <br class="break"> <a href="mailto:me@photography.com">stepfanszabo@gmail.com</a> <br class="break"> 1-800-888-8888</p>
-      <p>1000 Street Road <br class="break"> My City <br class="break"> My State <br class="break"> 19000</p>
-      <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Budapest+(Budapest)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
+    <section class="contact left-box">
+      <p>{{personal_data.name}}<br />
+        <a href="mailto:{{personal_data.email}}">{{personal_data.email}}</a><br />
+        {{personal_data.phone}}</p>
+      <br/>
+      <p>{{personal_data.address_street}}<br />
+        {{personal_data.address_city}}<br />
+        {{personal_data.address_country}}</p>
+    </section>
+    <section class="map">
+      <div style="width: 100%"><iframe width="100%" height="550" src="https://maps.google.com/maps?width=100%&amp;height=550&amp;hl=en&amp;q=Budapest+(Budapest)&amp;ie=UTF8&amp;t=&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google map generator</a></iframe></div><br />
     </section>
   <div class="clearfix"></div>
+</div>

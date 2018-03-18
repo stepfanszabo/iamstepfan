@@ -131,6 +131,16 @@ nav:hover ul {
 	float: left;
 	margin: 4%;
 }
+.left-box {
+	width: 38%;
+	float: left;
+	margin: 10% 0 4% 4%;
+}
+.map {
+	width: 48%;
+	float: left;
+	margin: 4%;
+}
 .one-third-port {
 	width: 29.333333%;
 	padding: 2%;
@@ -162,6 +172,7 @@ nav:hover ul {
 	padding-top: 17%;
 }
 .social {
+	padding-top: 2%;
 	list-style-type: none;
 	text-align: center;
 }
@@ -170,11 +181,11 @@ nav:hover ul {
 }
 .social i {
 	font-size: 270%;
-	margin: 1% 5% 7% 4%;
-	color: #2C2C2C;
+	margin: 1% 5% 1% 4%;
+	color: #ffffff;
 }
 .social i:hover {
-	color: #606060;
+	color: #B8B8B8;
 }
 footer.second {
 	background-color: #2C2C2C;
@@ -182,7 +193,7 @@ footer.second {
 footer.second p {
 	color: #FFF;
 	text-align: center;
-	padding: 5%;
+	padding: 1% 5% 2% 5%;
 }
 @media screen and (max-width: 768px) {
 	#menu-icon {
@@ -212,6 +223,15 @@ footer.second p {
 		padding: 0 2%;
 	}
 	.sidebar {
+		width: 96%;
+		margin: 0 auto;
+	}
+	.left-box {
+		width: 96%;
+		margin: 0 0 3% 0;
+		padding: 0 2%;
+	}
+	.map {
 		width: 96%;
 		margin: 0 auto;
 	}
