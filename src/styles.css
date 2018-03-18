@@ -251,4 +251,7 @@ footer.second p {
 	.social i {
 		font-size: 170%;
 	}
+	.social {
+		padding: 5% 0 0 0;
+	}
 }
