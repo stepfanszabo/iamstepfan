@@ -1,40 +1,76 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <span>Custom Toolbar</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button [matMenuTriggerFor]="home">
-          <span>Home</span>
-        </button>
-        <mat-menu #home="matMenu"></mat-menu>
-        <button mat-icon-button [matMenuTriggerFor]="gallery">
-          <span>Gallery</span>
-        </button>
-        <mat-menu #gallery="matMenu">
-          <a mat-menu-item href="https://material.angular.io/components/menu/examples">
-            <span>Redial</span>
-          </a>
-          <button mat-menu-item>
-            <span>Check voicemail</span>
-          </button>
-          <button mat-menu-item>
-            <span>Disable alerts</span>
-          </button>
-        </mat-menu>
-    </mat-toolbar-row>
-</mat-toolbar>
 
-
-  
-
-<mat-grid-list cols="2" rowHeight="500px">
-  <mat-grid-tile 
-      *ngFor="let tile of tiles">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>{{tile.location}}</mat-card-title>
-          <mat-card-subtitle>{{tile.date}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
-      </mat-card>
-  </mat-grid-tile>
-</mat-grid-list>
+  <a name="about">
+  <div class="clearfix"></div>
+    <section class="left-col">
+      <h2>About Me</h2>
+      <p style="text-indent: 6%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tristique ante, vitae rutrum quam. 
+        Morbi lobortis tempus dui, pretium sodales sem euismod sit amet. Aenean efficitur laoreet lacus, a condimentum ligula tempor eu. 
+        Nunc condimentum ultricies tortor a pulvinar. Sed pulvinar nunc sit amet nulla feugiat, vel posuere nibh elementum. Praesent 
+        faucibus vehicula dignissim. Fusce posuere quis orci non venenatis. Donec porta aliquet urna at fermentum. Integer iaculis tellus 
+        nulla, sit amet mollis dui commodo sit amet. Nunc sem arcu, euismod et commodo quis, luctus vel erat. Pellentesque habitant morbi 
+        tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor, mauris convallis viverra hendrerit, ipsum nisi 
+        euismod eros, ut euismod enim metus et tortor.</p>
+    </section>
+    <section class="sidebar">
+      <img src="assets/img/forest_small.jpg">
+    </section>
+  <div class="clearfix"></div>
+    <a name="port">
+      <h2>My Portfolio</h2>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_1.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_2.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_3.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_4.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_5.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_6.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_7.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_9.jpg"></a>
+      </section>
+      <section class="one-third-port">
+        <a href="#"><img src="assets/img/photo_10.jpg"></a>
+      </section>
+  <div class="clearfix"></div>
+    <a name="serv">
+    <section class="left-col">
+      <h2>My Services</h2>
+        <p style="text-indent: 6%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tristique ante, vitae rutrum quam. 
+          Morbi lobortis tempus dui, pretium sodales sem euismod sit amet. Aenean efficitur laoreet lacus, a condimentum ligula tempor eu. 
+          Nunc condimentum ultricies tortor a pulvinar. Sed pulvinar nunc sit amet nulla feugiat, vel posuere nibh elementum. Praesent 
+          faucibus vehicula dignissim. Fusce posuere quis orci non venenatis. Donec porta aliquet urna at fermentum. Integer iaculis tellus 
+          nulla, sit amet mollis dui commodo sit amet. Nunc sem arcu, euismod et commodo quis, luctus vel erat. Pellentesque habitant morbi 
+          tristique senectus et netus et malesuada fames ac turpis egestas. Praesent tempor, mauris convallis viverra hendrerit, ipsum nisi 
+          euismod eros, ut euismod enim metus et tortor.</p>
+    </section>
+    <section class="sidebar">
+      <section class="contact">
+        <p>Weddings <br class="break"> Portraits <br class="break"> Engagements <br class="break"> Social Events <br class="break"> Artistic Modeling <br class="break"> School Photos <br class="break"> Family Portraits</p>
+      </section>
+    </section>
+  <div class="clearfix"></div>
+    <a name="contact">
+      <section class="parallax">
+        <div class="parallax-inner">
+        </div>
+      </section>
+  <div class="clearfix"></div>
+    <h2>Contact Me</h2>
+    <section class="contact">
+      <p>Stefan Szabo <br class="break"> <a href="mailto:me@photography.com">stepfanszabo@gmail.com</a> <br class="break"> 1-800-888-8888</p>
+      <p>1000 Street Road <br class="break"> My City <br class="break"> My State <br class="break"> 19000</p>
+    </section>
+  <div class="clearfix"></div>
