@@ -5,12 +5,64 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700|Raleway'); /*--- Heading Font --*/
 
 
-html, body {
+html {
+	height:100%;
+	overflow: hidden;
+} 
+
+body {
 	margin: 0;
 	padding: 0;
 	height:100%;
 	width: 100%;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
+
+header {
+	box-sizing: border-box;
+	min-height: 100%;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+	height: 100%;
+	margin: auto;
+	display: table;
+	top: 0;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000;
+}
+
+header, header::before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	bottom: 0px;
+	content: "";
+	left: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: block;
+	background-image: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg);
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-size: 200%;
@@ -33,16 +85,7 @@ img {
 	height: auto;
 	width: auto;
 }
-.intro {
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	background: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg) no-repeat 50% 50%;
-	background-size: cover;
-	display: table;
-	top: 0;
-}
-.intro .inner {
+header .inner {
 	display: table-cell;
 	vertical-align: middle;
 	width: 100%;
@@ -50,20 +93,12 @@ img {
 }
 .container {
     width: 80%;
-    margin: 0 auto;
+	margin: 0 auto;
+	background-color: #FFF;
 }
 .content {
 	max-width: 600px;
 	margin: auto;
-}
-h1 {
-	font-family: 'Playfair Display', serif;
-	font-size: 300%;
-	font-weight: 700;
-	color: #FFF;
-	text-align: center;
-	padding: 2%;
-	text-shadow: 0px 0px 250px #000;
 }
 .content p {
 	color: #FFF;
@@ -194,6 +229,7 @@ footer.second p {
 	color: #FFF;
 	text-align: center;
 	padding: 1% 5% 2% 5%;
+	margin: 0px;
 }
 @media screen and (max-width: 768px) {
 	#menu-icon {
