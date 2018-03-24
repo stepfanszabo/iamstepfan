@@ -26,12 +26,17 @@
               });
             } 
           });
-        $("#toggle").click(function() {
+          $("#toggle").click(function() {
 
-          $(this).toggleClass('on');
-          $("#resize").toggleClass("active");
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
 
-        });
+          });
+          $("#menu a").click(function() {
+            $("#toggle").toggleClass('on');
+            $("#resize").toggleClass("active");
+
+          });
         });
         </script> 
 
