@@ -128,9 +128,9 @@ nav #brand {
 	float: left;
 	display: block;
 	margin-left: 84px;
-	font-size: 30px;
-	line-height: 70px;
+	margin-top: 10px;
 	font-weight: bold;
+	width: 50px;
 }
 
 nav #brand a {
@@ -143,6 +143,7 @@ nav #brand a {
 nav #menu {
 	float: left;
 	position: relative;
+	float: right;
 }
 
 nav #menu li {
