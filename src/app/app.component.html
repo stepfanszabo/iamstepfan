@@ -1,6 +1,6 @@
 
 <header class="intro">
-  <nav>
+  <!-- <nav>
     <a href="#" id="menu-icon"></a>
     <ul>
       <li><a href="#about">About Me</a></li>
@@ -8,7 +8,8 @@
       <li><a href="#serv">Services</a></li>
       <li><a href="#contact">Contact Me</a></li>
     </ul>
-  </nav>
+  </nav> -->
+
   <div class="inner">
     <div class="content">
       <h1>{{personal_data.name}}</h1>
@@ -16,10 +17,6 @@
     </div>
   </div>
 </header>
-<!-- <header>
-  <h1>{{personal_data.name}}</h1>
-  <p>my adventures.</p>
-</header> -->
 <div class="container">
   <div id="about"></div>
   <div class="clearfix"></div>
@@ -42,6 +39,13 @@
       <section *ngFor="let photo of port_photos" class="one-third-port">
           <a href="#"><img src="{{photo.src}}"></a>
       </section>
+      <ul class="gallery">
+        <li class="item1"><div class="bg"></div></li>
+        <li class="item2"><div class="bg"></div></li>
+        <li class="item3"><div class="bg"></div></li>
+        <li class="item4"><div class="bg"></div></li>
+        <li class="item5"><div class="bg"></div></li>
+      </ul>
   <div class="clearfix"></div>    
     <div id="serv"></div>
     <section class="left-col">

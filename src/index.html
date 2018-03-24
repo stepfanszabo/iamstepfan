@@ -26,8 +26,42 @@
               });
             } 
           });
+        $("#toggle").click(function() {
+
+          $(this).toggleClass('on');
+          $("#resize").toggleClass("active");
+
+        });
         });
         </script> 
+
+  <nav>
+    <span id="brand">
+      <a href="#">Brand</a>
+    </span>
+    <ul id="menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#port">Portfolio</a></li>
+      <li><a href="#serv">Services</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+
+    <div id="toggle">
+      <div class="span" id="one"></div>
+      <div class="span" id="two"></div>
+      <div class="span" id="three"></div>
+    </div>
+  </nav>
+
+  <div id="resize">
+    <ul id="menu">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#port">Portfolio</a></li>
+      <li><a href="#serv">Services</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </div>
+
   <app-root></app-root>
 	<footer class="second">
 		<ul class="social">
