@@ -15,17 +15,19 @@
 <body>
     <script>
         $(document).ready(function(){
-          $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 1000, function(){
-                window.location.hash = hash;
-              });
-            } 
-          });
+          if(window.location.pathname == "/index") {
+            $("a").on('click', function(event) {
+              if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 1000, function(){
+                  window.location.hash = hash;
+                });
+              } 
+            });
+          }
           $("#toggle").click(function() {
 
             $(this).toggleClass('on');
@@ -45,10 +47,10 @@
       <a href="#"><img src="assets/img/logo.png"></a>
     </span>
     <ul id="menu">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#port">Portfolio</a></li>
-      <li><a href="#serv">Services</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="/index#about">About Me</a></li>
+      <li><a href="/index#port">Portfolio</a></li>
+      <li><a href="/index#serv">Services</a></li>
+      <li><a href="/index#contact">Contact Me</a></li>
       <li><a href="/blog">Blog</a></li>
     </ul>
 
@@ -61,10 +63,10 @@
 
   <div id="resize">
     <ul id="menu">
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#port">Portfolio</a></li>
-      <li><a href="#serv">Services</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="/index#about">About Me</a></li>
+      <li><a href="/index#port">Portfolio</a></li>
+      <li><a href="/index#serv">Services</a></li>
+      <li><a href="/index#contact">Contact Me</a></li>
       <li><a href="/blog">Blog</a></li>
     </ul>
   </div>

@@ -1,0 +1,23 @@
+.postgrid {
+    margin-top:50px; 
+    position:relative;
+}
+
+.post {
+    width: 46%; 
+    height: 450px; 
+    background-color: #000; 
+    float:left; 
+    margin: 2% 2%;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.post {
+        width: 96%;
+        height:400px;
+		margin: 2% auto;
+		padding: 0;
+		display: inline;
+	}
+}

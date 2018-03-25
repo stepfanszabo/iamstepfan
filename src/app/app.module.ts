@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MainComponent } from './main/main.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BlogComponent } from './blog/blog.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    BlogComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule, 

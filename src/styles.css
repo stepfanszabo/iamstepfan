@@ -97,7 +97,7 @@ header .inner {
 	max-width: none;
 }
 .container {
-    width: 80%;
+	width: 80%;
 	margin: 0 auto;
 	background-color: #FFF;
 }
@@ -219,8 +219,8 @@ nav #menu li a {
 #resize #menu li {
 	display: block;
 	text-align: center;
-	padding: 20px 0;
-	font-size: 50px;
+	padding: 10px 0;
+	font-size: 45px;
 	min-height: 50px;
 	font-weight: bold;
 	cursor: pointer;
@@ -391,6 +391,7 @@ nav #menu li a {
 	color: #B8B8B8;
 }
 footer.second {
+	bottom: 0;
 	background-color: #2C2C2C;
 }
 footer.second p {
