@@ -8,9 +8,9 @@ import { AdminComponent }  from './admin/admin.component';
  
 const routes: Routes = [
   { path: '', redirectTo: '/index', pathMatch: 'full' },
-  { path: 'index',  component: MainComponent },
-  { path: 'blog',  component: BlogComponent },
-  { path: 'Eh6XEQ9uMxH',  component: AdminComponent },
+  { path: '/index',  component: MainComponent },
+  { path: '/blog',  component: BlogComponent },
+  { path: '/Eh6XEQ9uMxH',  component: AdminComponent },
   //{path: '**', component: NotFound }
 ];
  
