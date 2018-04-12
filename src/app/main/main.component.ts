@@ -10,9 +10,13 @@ export class MainComponent implements OnInit {
   public port_photos = [
     {text: 'Photo 1', src: "assets/img/photo_1.jpg", origin: "July 2017"},
     {text: 'Photo 2', src: "assets/img/photo_2.jpg", origin: "July 2017"},
-    {text: 'Photo 3', src: "assets/img/photo_3.jpg", origin: "July 2017"},
-    {text: 'Photo 4', src: "assets/img/photo_4.jpg", origin: "July 2017"},
     {text: 'Photo 5', src: "assets/img/photo_5.jpg", origin: "July 2017"},
+    {text: 'Photo 4', src: "assets/img/photo_4.jpg", origin: "July 2017"},
+    {text: 'Photo 3', src: "assets/img/photo_3.jpg", origin: "July 2017"},
+    {text: 'Photo 7', src: "assets/img/photo_7.jpg", origin: "July 2017"},
+    {text: 'Photo 8', src: "assets/img/photo_8.jpg", origin: "July 2017"},
+    {text: 'Photo 9', src: "assets/img/photo_9.jpg", origin: "July 2017"},
+    {text: 'Photo 10', src: "assets/img/photo_10.jpg", origin: "July 2017"},
   ];
 
   public personal_data = {

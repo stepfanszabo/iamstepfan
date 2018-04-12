@@ -42,7 +42,7 @@ h1 {
 	font-family: 'Playfair Display', serif;
 	font-size: 300%;
 	font-weight: 700;
-	color: #FFF;
+	color: #000;
 	text-align: center;
 	padding: 2%;
 	text-shadow: 0px 0px 250px #000;
@@ -60,7 +60,7 @@ header::before {
 	right: 0px;
 	top: 0px;
 	display: block;
-	background-image: url(https://static.pexels.com/photos/248159/pexels-photo-248159.jpeg);
+	background-image: url(assets/img/desk.jpg);
 	background-size: cover;
 	transform-origin: center center 0;
 	transform: translateZ(-1px) scale(2);
@@ -106,7 +106,8 @@ header .inner {
 	margin: auto;
 }
 .content p {
-	color: #FFF;
+	color: #000;
+	float: right;
 }
 .inner {
 	max-width: 600px;
@@ -260,98 +261,16 @@ nav #menu li a {
 	float: left;
 	margin: 4%;
 }
-.gallery {
-	position: relative;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	margin: 200px 0 125px 0;
-	padding: 0;
-	width: 50%;
-	height: 300px;
-}
-
-.gallery li {
-	list-style: none;
-	position: absolute;
-	width: 250px;
-	height: 250px;
-	background: #000;
-	transform: rotate(45deg);
-	transition: .5s;
-	margin: -9% -15%;
-	overflow: hidden;
-}
-
-.gallery li .bg {
-	width: 100%;
-	height: 100%;
-	transform: rotate(-45deg) scale(1.42);
-	transition: .5s;
-}
-
-.gallery li .bg:hover {
-	opacity: .6;
-}
-
-.gallery li.item1 .bg {
-	background: url(assets/img/photo_1.jpg);
-	background-size: cover;
-}
-
-.gallery li.item2 .bg {
-	background: url(assets/img/photo_2.jpg);
-	background-size: cover;
-}
-
-.gallery li.item3 .bg {
-	background: url(assets/img/photo_3.jpg);
-	background-size: cover;
-}
-
-.gallery li.item4 .bg {
-	background: url(assets/img/photo_4.jpg);
-	background-size: cover;
-}
-
-.gallery li.item5 .bg {
-	background: url(assets/img/photo_5.jpg);
-	background-size: cover;
-}
-
-.gallery li.item1 {
-	top: 0;
-	left: 0;
-}
-
-.gallery li.item2 {
-	bottom: 0;
-	left: 25%;
-}
-
-.gallery li.item3 {
-	top: 0;
-	left: 50%;
-}
-
-.gallery li.item4 {
-	bottom: 0;
-	left: 75%;
-}
-
-.gallery li.item5 {
-	top: 0;
-	left: 100%;
-}
 
 .one-third-port {
 	width: 29.333333%;
 	padding: 2%;
 	float: left;
-	display: none;
 }
-.one-third-port img:hover {
+ .one-third-port img:hover {
 	opacity: .6;
 }
+
 .contact p {
 	text-align: center;
 	letter-spacing: 5px;
