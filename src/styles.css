@@ -131,7 +131,6 @@ nav #brand {
 	margin-left: 84px;
 	margin-top: 10px;
 	font-weight: bold;
-	width: 50px;
 }
 
 nav #brand a {
@@ -207,7 +206,7 @@ nav #menu li a {
 	opacity: 0;
 	transition: all 1s ease-out;
 	display: table;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 #resize #menu {
